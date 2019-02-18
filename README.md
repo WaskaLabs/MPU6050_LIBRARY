@@ -4,4 +4,5 @@ MPU6050 LIBRARY ALLOWS THE USER TO CHANGE THE ACCELEROMETER AND GYROSCOPE RANGE 
 MPU DOCS LINKS: 
 
 DATASHEET:      https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
-         REGISTER MAP:   https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
+
+REGISTER MAP:   https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
