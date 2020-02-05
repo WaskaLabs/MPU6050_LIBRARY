@@ -56,7 +56,7 @@ float MPU::getTemp() {
     Wire.write(0x41); // WHERE TO START READING FROM
     Wire.endTransmission(false); // IMPORTANT!!!
     
-    Wire.requestFrom(MPU6050_ADDRESS, 2); // REQUEST 2 BYTES
+    Wire.requestFrom(MPU6050_ADDRESS, 2, true); // REQUEST 2 BYTES
     if (Wire.available()) {
         H = Wire.read(); // TAKE IN HIGH BYTE
         L = Wire.read(); // TAKE IN LOW BYTE
@@ -97,7 +97,7 @@ int MPU::getGyro (char axis) {
     Wire.write(addr); // WHERE TO START READING FROM
     Wire.endTransmission(false); // IMPORTANT!!!
     
-    Wire.requestFrom(MPU6050_ADDRESS, 2); // REQUEST 2 BYTES
+    Wire.requestFrom(MPU6050_ADDRESS, 2, true); // REQUEST 2 BYTES
     if (Wire.available()) {
         H = Wire.read(); // TAKE IN HIGH BYTE
         L = Wire.read(); // TAKE IN LOW BYTE
@@ -132,7 +132,7 @@ int MPU::getAccel (char axis) {
     Wire.write(addr); // WHERE TO START READING FROM
     Wire.endTransmission(false); // IMPORTANT!!!
     
-    Wire.requestFrom(MPU6050_ADDRESS, 2); // REQUEST 2 BYTES
+    Wire.requestFrom(MPU6050_ADDRESS, 2, true); // REQUEST 2 BYTES
     if (Wire.available()) {
         H = Wire.read(); // TAKE IN HIGH BYTE
         L = Wire.read(); // TAKE IN LOW BYTE
